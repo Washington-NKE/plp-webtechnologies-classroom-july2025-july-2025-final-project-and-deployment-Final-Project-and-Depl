@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYEKUSA - Christian Fellowship Kenya</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">
+                <i class="fas fa-cross"></i>
+                NYEKUSA
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('activities')">Activities</a></li>
+                <li><a href="#" onclick="showPage('gallery')">Gallery</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+        <section class="hero">
+            <div class="floating-cross"><i class="fas fa-cross"></i></div>
+            <div class="floating-cross"><i class="fas fa-heart"></i></div>
+            <div class="floating-cross"><i class="fas fa-hands-praying"></i></div>
+            
+            <div class="hero-content">
+                <h1>Welcome to NYEKUSA</h1>
+                <p>A vibrant Christian fellowship in Kenya dedicated to spreading God's love and building community through faith, service, and worship.</p>
+                <a href="#" class="cta-button" onclick="showPage('about')">Learn More About Us</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="section-header reveal">
+                <h2>Our Core Values</h2>
+                <p>Building a stronger community through faith, love, and service to God and others.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Prayer & Worship</h3>
+                        <p>Regular prayer meetings and worship services that strengthen our relationship with God and each other.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bible Study</h3>
+                        <p>Deep study of God's word through group discussions, seminars, and personal reflection.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Community Service</h3>
+                        <p>Serving our local community through outreach programs, charity work, and social initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page">
+        <section class="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>About NYEKUSA</h2>
+                    <p>Our history, mission, and the passionate team that makes it all possible.</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <h3>Our Mission</h3>
+                        <p>NYEKUSA is a Christian fellowship group based in Kenya, committed to spreading the Gospel of Jesus Christ and building a strong community of believers. We believe in the power of faith, love, and unity to transform lives and communities.</p>
+                        
+                        <h3>Our Vision</h3>
+                        <p>To be a beacon of hope and light in our community, demonstrating God's love through our actions and serving as ambassadors of Christ in all we do.</p>
+                        
+                        <h3>Our Values</h3>
+                        <ul>
+                            <li><strong>Faith:</strong> Trusting in God's plan and promises</li>
+                            <li><strong>Love:</strong> Showing Christ's love to all people</li>
+                            <li><strong>Unity:</strong> Building strong relationships within our community</li>
+                            <li><strong>Service:</strong> Serving God and others with humble hearts</li>
+                        </ul>
+                    </div>
+                    <div class="about-image reveal">
+                        <i class="fas fa-church"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="section-header reveal">
+                <h2>Our Leadership Team</h2>
+                <p>Dedicated servants leading our community with wisdom and compassion.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pastor Washington Mwangi</h3>
+                        <p>Senior Pastor with over 15 years of ministry experience, leading our spiritual growth and community outreach.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Risper Njoki</h3>
+                        <p>Youth Coordinator, passionate about mentoring young people and organizing engaging activities for our youth ministry.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>David Kamau</h3>
+                        <p>Worship Leader, gifted musician who leads our congregation in uplifting praise and worship experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ACTIVITIES PAGE -->
+    <div id="activities" class="page">
+        <section class="container">
+            <div class="section-header reveal">
+                <h2>Our Activities & Programs</h2>
+                <p>Join us in various spiritual and community-building activities throughout the week.</p>
+            </div>
+            <div class="card-grid">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Sunday Worship Service</h3>
+                        <p>Join us every Sunday at 9:00 AM for inspiring worship, powerful sermons, and fellowship. Experience God's presence in a welcoming environment.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Bible Study Groups</h3>
+                        <p>Wednesday evening Bible study sessions where we dive deep into God's word and grow together in understanding and faith.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Youth Ministry</h3>
+                        <p>Engaging programs for young people including sports, music, drama, and leadership development activities every Friday evening.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Women's Fellowship</h3>
+                        <p>Monthly gatherings for women to share, pray, and support each other through various life seasons and challenges.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Community Outreach</h3>
+                        <p>Regular community service projects including feeding programs, clothing drives, and visiting orphanages and elderly care centers.</p>
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <i class="fas fa-pray"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Prayer Meetings</h3>
+                        <p>Join us for powerful prayer sessions every Tuesday evening as we intercede for our community, nation, and world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Weekly Schedule</h2>
+                </div>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <h3>Weekly Program Schedule</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><strong>Sunday:</strong> 9:00 AM - Worship Service</li>
+                            <li><strong>Tuesday:</strong> 6:00 PM - Prayer Meeting</li>
+                            <li><strong>Wednesday:</strong> 7:00 PM - Bible Study</li>
+                            <li><strong>Friday:</strong> 6:00 PM - Youth Ministry</li>
+                            <li><strong>Saturday:</strong> 10:00 AM - Community Outreach (Monthly)</li>
+                        </ul>
+                        
+                        <h3>Special Events</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li><strong>First Saturday:</strong> Women's Fellowship</li>
+                            <li><strong>Last Sunday:</strong> Family Day & Potluck</li>
+                            <li><strong>Quarterly:</strong> Youth Camps & Retreats</li>
+                            <li><strong>Annual:</strong> Conference & Revival Meetings</li>
+                        </ul>
+                    </div>
+                    <div class="about-image reveal">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- GALLERY PAGE -->
+    <div id="gallery" class="page">
+        <section class="container">
+            <div class="section-header reveal">
+                <h2>Photo Gallery</h2>
+                <p>Memories from our worship services, community events, and fellowship activities.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <i class="fas fa-church"></i>
+                    <span style="position: absolute; bottom: 10px; font-size: 1rem;">Sunday Worship</span>
+                </div>
+                <div class="gallery-item reveal">
+                    <i class="fas fa-users"></i>
+                    <span style="position: absolute; bottom: 10px; font-size: 1rem;">Bible Study</span>
+                </div>
+                <div class="gallery-item reveal">
+                    <i class="fas fa-child"></i>
+                    <span style="position: absolute; bottom: 10px; font-size: 1rem;">Youth Activities</span>
+                </div>
+                <div class="gallery-item reveal">
+                    <i class="fas fa-hands-helping"></i>
+                    <span style="position: absolute; bottom: 10px; font-size: 1rem;">Community Service</span>
+                </div>
+                <div class="gallery-item reveal">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span style="position: absolute; bottom: 10px; font-size: 1rem;">Celebrations</span>
+                </div>
+                <div class="gallery-item reveal">
+                    <i class="fas fa-campground"></i>
+                    <span style="position: absolute; bottom: 10px; font-size: 1rem;">Retreats</span>
+                </div>
+                <div class="gallery-item reveal">
+                    <i class="fas fa-music"></i>
+                    <span style="position: absolute; bottom: 10px; font-size: 1rem;">Worship Team</span>
+                </div>
+                <div class="gallery-item reveal">
+                    <i class="fas fa-pray"></i>
+                    <span style="position: absolute; bottom: 10px; font-size: 1rem;">Prayer Meetings</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page">
+        <section class="container">
+            <div class="section-header reveal">
+                <h2>Get In Touch</h2>
+                <p>We'd love to hear from you. Reach out to us for questions, prayer requests, or to join our fellowship.</p>
+            </div>
+            
+            <div class="contact-form reveal">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a topic</option>
+                            <option value="prayer">Prayer Request</option>
+                            <option value="join">Join Fellowship</option>
+                            <option value="volunteer">Volunteer</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Visit Us</h2>
+                </div>
+                <div class="card-grid">
+                    <div class="card reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Our Location</h3>
+                            <p>Nyeri, Kenya<br>
+                            Near Town Center<br>
+                            Easily accessible by public transport</p>
+                        </div>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Call Us</h3>
+                            <p>Main Office: +254 713 440 774<br>
+                            Pastor Washington: +254 115 124 709<br>
+                            Youth Ministry: +254 738 100 678</p>
+                        </div>
+                    </div>
+                    <div class="card reveal">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="card-content">
+                            <h3>Email Us</h3>
+                            <p>info@nyekusa.org<br>
+                            pastor@nyekusa.org<br>
+                            youth@nyekusa.org</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>NYEKUSA</h3>
+                <p>A Christian fellowship dedicated to spreading God's love and building community in Kenya.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="#" onclick="showPage('about')">About Us</a>
+                <a href="#" onclick="showPage('activities')">Activities</a>
+                <a href="#" onclick="showPage('gallery')">Gallery</a>
+                <a href="#" onclick="showPage('contact')">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h3>Service Times</h3>
+                <p>Sunday Worship: 9:00 AM</p>
+                <p>Bible Study: Wed 7:00 PM</p>
+                <p>Prayer Meeting: Tue 6:00 PM</p>
+                <p>Youth Ministry: Fri 6:00 PM</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nyeri, Kenya</p>
+                <p><i class="fas fa-phone"></i> +254 713 440 774</p>
+                <p><i class="fas fa-envelope"></i> info@nyekusa.org</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #444;">
+            <p>&copy; <span id="currentYear"></span> NYEKUSA Christian Fellowship. All rights reserved. Built with love and faith.</p>
+        </div>
+    </footer>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
